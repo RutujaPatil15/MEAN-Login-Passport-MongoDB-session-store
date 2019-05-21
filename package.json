@@ -1,0 +1,29 @@
+{
+  "name": "mean-login-passport-mongodbsession",
+  "version": "1.0.0",
+  "description": "MEAN stack Login project using Passport ,MongoDB session store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "MEAN stack Login project using Passport ,MongoDB session store"
+  },
+  "author": "Rutuja Patil\u001b[D\u001b[D\u001b[D\u001b[D\u001b[\u001b[\u001b[C\u001b[C\u001b[C\u001b[aPatil15",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "connect-mongodb-session": "^2.1.1",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "mongodb": "^3.2.3",
+    "mongojs": "^2.6.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}

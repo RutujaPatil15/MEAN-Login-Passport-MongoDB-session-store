@@ -1,0 +1,42 @@
+<div ng-cloak>
+<md-content class="md-padding" layout="row" layout-align="center start">
+    <div flex-xs flex-gt-xs="38" layout="column" style="margin-top:50px;">
+     <md-card>
+     	 <md-toolbar class="orange">
+          <div class="md-toolbar-tools">
+            <h3> Login</h3>
+          </div>
+        </md-toolbar>
+        <md-card-content>
+         <form name="frm" ng-submit="loginform(frm)">
+      <md-input-container class="md-block">
+        <label> Username</label>
+        <md-icon md-svg-src="icons/ic_email_black_24px.svg" class="name"></md-icon>
+        <input required type="email" name="email" ng-model="email"
+               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+       <div ng-messages="frm.special.$error" multiple>
+          <div ng-message="required">
+            Please enter correct Email
+          </div>
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label> Password</label>
+        <md-icon md-svg-src="icons/ic_lock_open_black_24px.svg" class="name"></md-icon>
+        <input required type="password" name="password" ng-model="password" />
+         <div ng-messages="frm.special.$error" multiple>
+          <div ng-message="required">
+            Please enter correct Password
+          </div>
+        </div>
+      </md-input-container>
+      <md-button class="md-raised" type="submit">Login</md-button><span flex></span>
+      Create a new account:<a class="md-warn" href="http://localhost:3000/#!/signup">signup</a>
+  </form>
+</md-card-content>
+
+
+</md-card>
+</div>
+</md-content>
+</div>

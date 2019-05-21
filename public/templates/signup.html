@@ -1,0 +1,53 @@
+<div ng-cloak>
+<md-content class="md-padding" layout="row" layout-align="center start">
+    <div flex-xs flex-gt-xs="30" layout="column" style="margin-top:30px;">
+     <md-card>
+     	 <md-toolbar class="orange">
+          <div class="md-toolbar-tools">
+            <h3>Signup</h3>
+          </div>
+        </md-toolbar>
+        <md-card-content>
+         <form name="frm" ng-submit="submit(frm)">
+          <md-input-container class="md-block">
+        <label>Username</label>
+        <md-icon md-svg-src="icons/baseline-account_circle-24px.svg" class="name"></md-icon>
+        <input required type="text" name="username" ng-model="username"
+               minlength="3" maxlength="20"/>
+       <div ng-messages="frm.special.$error" >
+          <div ng-message="required">
+            Please enter correct username
+          </div>
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label> Email</label>
+        <md-icon md-svg-src="icons/ic_email_black_24px.svg" class="name"></md-icon>
+        <input required type="email" name="email" ng-model="email"
+               minlength="3" maxlength="30" ng-pattern="/^.+@.+\..+$/" />
+       <div ng-messages="frm.special.$error">
+          <div ng-message="required">
+            Please enter correct Email
+          </div>
+        </div>
+      </md-input-container>
+      <md-input-container class="md-block">
+        <label> Password</label>
+        <md-icon md-svg-src="icons/ic_lock_open_black_24px.svg" class="name"></md-icon>
+        <input required type="password" name="password" ng-model="password" />
+         <div ng-messages="frm.special.$error">
+          <div ng-message="required">
+            Please enter correct Password
+          </div>
+        </div>
+      </md-input-container>
+
+      <md-button class="md-raised" type="submit">Signup</md-button>
+       Have an account?<a href="/"class="md-warn">Login</a>
+  </form>
+
+</md-card-content>
+</md-card>
+</div>
+</md-content>
+</div>
